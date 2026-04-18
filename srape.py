@@ -2,7 +2,7 @@ from selenium.webdriver import Remote, ChromeOptions as Options
 from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnection
 from bs4 import BeautifulSoup, soup, soup
 
-SBR_WEBDRIVER = "https://brd-customer-hl_eff51270-zone-is_project:t7rkea9aylu6@brd.superproxy.io:9515"
+SBR_WEBDRIVER = ""#<--Bright data API key
 
 def scrape_website(website):
     print("Launching chrome browser ... ")
