@@ -20,8 +20,8 @@ def scrape_website(website):
         print('Captcha solve status:', solve_res['value']['status'])
         print('Navigated! Scraping page content ... ')
         
-        html = driver.page_source   # ✅ NOW it's valid
-        return html                 # ✅ return before session closes
+        html = driver.page_source
+        return html
     
 
 def extract_body_content(html_content):
