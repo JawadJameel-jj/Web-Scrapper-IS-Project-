@@ -51,12 +51,12 @@ An intelligent **AI-powered web scraper** built using **Python, Streamlit, Selen
 
 ## 🗂️ Project Structure
 
-```id="3k2l9f"
-├── Main.py            # Streamlit UI
-├── Scrape.py          # Web scraping + cleaning
-├── Parse.py           # AI parsing using Ollama
-├── Requirements.txt   # Dependencies
-├── chromedriver.exe   # Chrome driver (required)
+```id="h3k92p"
+├── Main.py
+├── Scrape.py
+├── Parse.py
+├── Requirements.txt
+├── chromedriver.exe
 ```
 
 ---
@@ -65,22 +65,48 @@ An intelligent **AI-powered web scraper** built using **Python, Streamlit, Selen
 
 ### 1️⃣ Clone the Repository
 
-```bash id="l0k1mz"
+```bash id="r7m4bz"
 git clone <your-repo-url>
 cd <repo-folder>
 ```
 
-### 2️⃣ Install Dependencies
+---
 
-```bash id="d9xw21"
+### 2️⃣ Create Virtual Environment
+
+```bash id="p9x2lm"
+python -m venv ai
+```
+
+---
+
+### 3️⃣ Activate Virtual Environment
+
+#### Windows:
+
+```bash id="c2q8yt"
+ai\Scripts\activate
+```
+
+#### macOS/Linux:
+
+```bash id="k5v9sd"
+source ai/bin/activate
+```
+
+---
+
+### 4️⃣ Install Dependencies
+
+```bash id="u1z8eo"
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Install Ollama
+---
 
-Make sure you have Ollama installed and running:
+### 5️⃣ Install & Run Ollama
 
-```bash id="y7m2qp"
+```bash id="g6n3va"
 ollama run llama3
 ```
 
@@ -88,7 +114,7 @@ ollama run llama3
 
 ## ▶️ Running the App
 
-```bash id="w8v3an"
+```bash id="y4t7wk"
 streamlit run Main.py
 ```
 
@@ -99,7 +125,7 @@ streamlit run Main.py
 1. Enter a website URL
 2. Click **"Scrape Site"**
 3. View cleaned DOM content
-4. Describe what you want (e.g., *"Extract all product names"*)
+4. Describe what you want (e.g., *"Extract emails"*)
 5. Click **"Parse Content"**
 6. Get AI-extracted results 🎯
 
@@ -107,43 +133,43 @@ streamlit run Main.py
 
 ## 🧰 Tech Stack
 
-* **Frontend/UI:** Streamlit
-* **Web Scraping:** Selenium
-* **Parsing:** BeautifulSoup
-* **LLM Integration:** LangChain + Ollama (LLaMA 3)
-* **Language:** Python
+* Streamlit
+* Selenium
+* BeautifulSoup
+* LangChain
+* Ollama (LLaMA 3)
+* Python
 
 ---
 
 ## ⚠️ Requirements
 
 * Python 3.8+
-* Chrome Browser
-* Compatible `chromedriver.exe`
-* Ollama installed and running
+* Google Chrome
+* `chromedriver.exe` (matching your Chrome version)
+* Ollama installed
 
 ---
 
-## ⚠️ Limitations
+## ⚠️ Notes
 
-* Requires local Ollama setup
+* Always activate the virtual environment before running the app
+* Large websites may take longer due to AI processing
 * CAPTCHA solving depends on external service
-* Large pages may take longer due to chunking
 
 ---
 
 ## 🔮 Future Improvements
 
-* Add support for multiple LLMs (GPT, Claude, etc.)
 * Export results (CSV / JSON)
-* Add scraping history
-* Improve UI/UX
-* Parallel chunk processing for speed
+* Multi-model support (GPT, Claude)
+* Better UI design
+* Faster processing with parallel chunks
 
 ---
 
 ## 👨‍💻 Author
 
-Built as an **AI + Web Scraping project** combining automation and LLM capabilities.
+AI + Automation Project combining **Web Scraping + LLMs**
 
 ---
